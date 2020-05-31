@@ -77,10 +77,7 @@ inquirer.prompt({
         })
 
 
-
-
-
-        fs.writeFile("readme.md", "# " + response.project_title + "\n", function (error) {
+        fs.appendFile("readme.md", "# " + response.project_title + "\n", function (error) {
             if (error) {
                 console.log(error);
             }
