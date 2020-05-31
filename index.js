@@ -1,20 +1,22 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
+const token = "d2204d4ef5bf4183fc0a0a9ddd1e261949c38116";
 
 inquirer.prompt({
     message: "Enter your github username",
     name: "username"
 }).then(function ({ username }) {
     const queryUrl = `https://api.github.com/users/${username}`;
+    const emailUrl = `https://api.github.com/user/emails?access_token=${token}`;
 
     axios.get(queryUrl).then(function (res) {
-        const gitEmail = res.data.email;
+        //const gitEmail = res.data.email;
         const gitProfile = res.data.avatar_url;
-
-        // console.log(gitEmail);
-        // console.log(gitProfile);
-
+        var gitEmail = "";
+        axios.get(emailUrl).then(function (res1) {
+            gitEmail = res1.data[0].email;
+        })
         inquirer.prompt([{
             type: "input",
             name: "project_title",
@@ -65,7 +67,19 @@ inquirer.prompt({
             // console.log(response.contribution);
             // console.log(response.test);
 
-            fs.writeFile("readme.md", "![alt text](https://img.shields.io/badge/license-" + response.license + "-green)" + "\n", function (error) {
+            fs.writeFile("readme.md", "# " + response.project_title + "\n", function (error) {
+                if (error) {
+                    console.log(error);
+                }
+                else {
+                    console.log("success");
+
+                }
+
+            })
+
+
+            fs.appendFile("readme.md", "\n" + "![alt text](https://img.shields.io/badge/license-" + response.license + "-green)" + "\n", function (error) {
                 if (error) {
                     console.log(error);
                 }
@@ -88,19 +102,7 @@ inquirer.prompt({
 
             })
 
-            // fs.appendFile("readme.md","![alt text]("+gitProfile+") \n", function (error) {
-            //     if (error) {
-            //         console.log(error);
-            //     }
-            //     else {
-            //         console.log("success");
-
-            //     }
-
-            // })
-
-
-            fs.appendFile("readme.md", "# " + response.project_title + "\n", function (error) {
+            fs.appendFile("readme.md", "\n" + "### email:" + gitEmail + "\n", function (error) {
                 if (error) {
                     console.log(error);
                 }
@@ -110,6 +112,8 @@ inquirer.prompt({
                 }
 
             })
+
+
 
             fs.appendFile("readme.md", "\n" + "## Description" + "\n" + response.description + "\n", function (error) {
                 if (error) {

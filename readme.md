@@ -1,10 +1,11 @@
-![alt text](https://img.shields.io/badge/license-MIT-green)
+# Good Read Me Generator
 
 ![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
-# Good ReadMe generator
+
+![alt text](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-Good ReadMe generator
+to spend more time working on project and less time creating the readme 
 
 ## Table of Content
 - License
@@ -12,17 +13,19 @@ Good ReadMe generator
 - Installation
 - Contribution
 
+## Installation
+npm install
+
+### email:bhagyashree9402@gmail.com
+
+## Contribution
+single contributor
+
+## tests
+unit test
+
 ## License
 MIT
 
 ## Usage
-can easily write the readme.md file
-
-## Installation
-npm install
-
-## Contribution
-no contribution
-
-## tests
-unit test
+can easily create the good read me
