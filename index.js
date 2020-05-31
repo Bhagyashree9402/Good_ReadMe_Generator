@@ -65,7 +65,7 @@ inquirer.prompt({
         // console.log(response.contribution);
         // console.log(response.test);
 
-        fs.writeFile("readme.md", "[](https://img.shields.io/badge/I_say-wuuut-red)" + "\n", function (error) {
+        fs.writeFile("readme.md", "![alt text](https://img.shields.io/badge/license-" + response.license + "-green)" + "\n", function (error) {
             if (error) {
                 console.log(error);
             }
