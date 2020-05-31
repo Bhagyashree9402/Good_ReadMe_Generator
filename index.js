@@ -77,7 +77,7 @@ inquirer.prompt({
             })
 
 
-            fs.appendFile("readme.md", "![alt text](" + gitProfile + ") \n", function (error) {
+            fs.appendFile("readme.md", "\n" + "![alt text](" + gitProfile + ") \n", function (error) {
                 if (error) {
                     console.log(error);
                 }

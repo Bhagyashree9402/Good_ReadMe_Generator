@@ -1,9 +1,10 @@
-![alt text](https://img.shields.io/badge/license-Apache-green)
+![alt text](https://img.shields.io/badge/license-MIT-green)
+
 ![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
-# bbbb
+# Good ReadMe generator
 
 ## Description
-bbbb
+Good ReadMe generator
 
 ## Table of Content
 - License
@@ -11,17 +12,17 @@ bbbb
 - Installation
 - Contribution
 
+## License
+MIT
+
 ## Usage
-cvvv
+can easily write the readme.md file
 
 ## Installation
-vfv
+npm install
 
 ## Contribution
-vx
+no contribution
 
 ## tests
-cvfv
-
-## License
-Apache
+unit test
