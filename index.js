@@ -32,7 +32,7 @@ inquirer.prompt({
             type: "list",
             name: "license",
             message: "what kind of license should your project have?",
-            choices: ["MIT", "Apache", "GPL", "Mozilla"],
+            choices: ["MIT", "Apache", "GPL", "Mozilla", "none"],
         },
 
         {
