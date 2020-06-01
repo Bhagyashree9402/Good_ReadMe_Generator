@@ -1,21 +1,21 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
-const token = "566ab5f3ee05bd33431036ffe6180a876ba8ebfa";
+const token = "d2204d4ef5bf4183fc0a0a9ddd1e261949c38116";
 
 inquirer.prompt({
     message: "Enter your github username",
     name: "username"
 }).then(function ({ username }) {
     const queryUrl = `https://api.github.com/users/${username}`;
-    const emailUrl = `https://api.github.com/user/emails?access_token=${token}`;
+    const emailUrl = `https://api.github.com/users/${username}/events/public`;
 
     axios.get(queryUrl).then(function (res) {
         //const gitEmail = res.data.email;
         const gitProfile = res.data.avatar_url;
         var gitEmail = "";
         axios.get(emailUrl).then(function (res1) {
-            gitEmail = res1.data[0].email;
+            gitEmail = res1.data[0].payload.commits[0].author.email;
         })
         inquirer.prompt([{
             type: "input",
