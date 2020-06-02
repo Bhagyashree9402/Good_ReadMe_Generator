@@ -89,6 +89,7 @@ inquirer.prompt({
                 + "\n" + "## Installation" + "\n" + response.installation + "\n"
                 + "\n" + "## Contribution" + "\n" + response.contribution + "\n"
                 + "\n" + "## tests" + "\n" + response.test + "\n"
+                + "\n" + "## Demo Gif" + "\n" + "![alt text](./project.gif)" + "\n"
                 + "\n" + "## Contributor" + "\n" + "![alt text](" + gitProfile + ") \n"
                 + "\n" + "### Email: " + "\n" + gitEmail + "\n",
                 function (error) {

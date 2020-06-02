@@ -1,9 +1,9 @@
-# Good ReadMe Generator
+# Good Read Me Generator
 
 ![alt text](https://img.shields.io/badge/license-none-green)
 
 ## Description
-Spend more time working on project,less time creating readme 
+To spend more time working on project,less time creating readme
 
 ## Table of Content
 - License
@@ -15,7 +15,7 @@ Spend more time working on project,less time creating readme
 none
 
 ## Usage
-Can easily create readme file
+Can easily Create readme
 
 ## Installation
 npm install
@@ -25,6 +25,9 @@ Single contributor
 
 ## tests
 node index.js
+
+## Demo Gif
+![alt text](./project.gif)
 
 ## Contributor
 ![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
