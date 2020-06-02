@@ -3,7 +3,7 @@
 ![alt text](https://img.shields.io/badge/license-none-green)
 
 ## Description
-To spend more time working on project & less time creating readme
+To spend more time working on project,less time creating readme 
 
 ## Table of Content
 - License
@@ -21,11 +21,13 @@ Can easily create the readme file
 npm install
 
 ## Contribution
-single contributor
+Single contributor
 
 ## tests
 node index.js
 
+## Contributor
 ![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
 
-### email:bhagyashree9402@gmail.com
+### email: 
+bhagyashree9402@gmail.com
