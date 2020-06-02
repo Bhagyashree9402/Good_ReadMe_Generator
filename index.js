@@ -66,6 +66,7 @@ inquirer.prompt({
             // console.log(rseponse.usage);
             // console.log(response.contribution);
             // console.log(response.test);
+            fs.unlinkSync("readme.md");
 
             fs.writeFile("readme.md", "# " + response.project_title + "\n", function (error) {
                 if (error) {

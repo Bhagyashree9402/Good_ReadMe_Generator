@@ -1,8 +1,9 @@
 # Good ReadMe Generator
-.shields.io/badge/license-none-green)
+
+![alt text](https://img.shields.io/badge/license-none-green)
 
 ## Description
-To spend more time working on project ,less time creating readme
+Spend more time working on project,less time creating readme 
 
 ## Table of Content
 - License
