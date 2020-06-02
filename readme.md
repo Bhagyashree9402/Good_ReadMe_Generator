@@ -1,13 +1,9 @@
-# Good Read ME Generator
+# Good ReadMe Generator
 
 ![alt text](https://img.shields.io/badge/license-none-green)
 
-![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
-
-### email:bhagyashree9402@gmail.com
-
 ## Description
-allows to spend more time working on project less time on creating readme
+To spend more time working on project & less time creating readme
 
 ## Table of Content
 - License
@@ -19,7 +15,7 @@ allows to spend more time working on project less time on creating readme
 none
 
 ## Usage
-Can easily create the read me file
+Can easily create the readme file
 
 ## Installation
 npm install
@@ -29,3 +25,7 @@ single contributor
 
 ## tests
 node index.js
+
+![alt text](https://avatars3.githubusercontent.com/u/61488735?v=4) 
+
+### email:bhagyashree9402@gmail.com

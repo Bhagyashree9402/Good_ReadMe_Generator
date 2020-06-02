@@ -80,15 +80,17 @@ inquirer.prompt({
 
 
             fs.appendFile("readme.md", "\n" + "![alt text](https://img.shields.io/badge/license-" + response.license + "-green)" + "\n"
-                + "\n" + "![alt text](" + gitProfile + ") \n"
-                + "\n" + "### email:" + gitEmail + "\n"
+
                 + "\n" + "## Description" + "\n" + response.description + "\n"
                 + "\n" + "## Table of Content" + "\n" + "- License" + "\n" + "- Usage" + "\n" + "- Installation" + "\n" + "- Contribution" + "\n"
                 + "\n" + "## License" + "\n" + response.license + "\n"
                 + "\n" + "## Usage" + "\n" + response.usage + "\n"
                 + "\n" + "## Installation" + "\n" + response.installation + "\n"
                 + "\n" + "## Contribution" + "\n" + response.contribution + "\n"
-                + "\n" + "## tests" + "\n" + response.test + "\n", function (error) {
+                + "\n" + "## tests" + "\n" + response.test + "\n"
+                + "\n" + "![alt text](" + gitProfile + ") \n"
+                + "\n" + "### email:" + gitEmail + "\n",
+                function (error) {
                     if (error) {
                         console.log(error);
                     }
