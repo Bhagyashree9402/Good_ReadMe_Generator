@@ -89,7 +89,7 @@ inquirer.prompt({
                 + "\n" + "## Contribution" + "\n" + response.contribution + "\n"
                 + "\n" + "## tests" + "\n" + response.test + "\n"
                 + "\n" + "## Contributor" + "\n" + "![alt text](" + gitProfile + ") \n"
-                + "\n" + "### email: " + "\n" + gitEmail + "\n",
+                + "\n" + "### Email: " + "\n" + gitEmail + "\n",
                 function (error) {
                     if (error) {
                         console.log(error);
